@@ -1,8 +1,6 @@
-h1. preGrbl - A g-code preprocessor for grbl, the 3-axis CNC Arduino firmware.
+h1. preGrbl - Fork of preGrbl, A g-code preprocessor for grbl, the 3-axis CNC Arduino firmware.
 
 PreGrbl intends to offload higher level tasks and computationally expensive routines from the on-board firmware of Grbl, primarily to keep Grbl simple and efficient. These tasks include more robust and complete NIST g-code error checking, implementing canned cycles by translating the tool paths, and converting the g-code into a Grbl-friendly format. 
-
-In the near future, PreGrbl may be used as a starting point for a full-featured CNC user interface for Grbl, much like EMC2 or Mach3. For example, a GUI interface would translate a g-code program with canned cycles into a Grbl-friendly format and stream it in the background directly to Grbl. 
 
 Current Features:
   - Notifies unsupported g-code commands for grbl
@@ -13,6 +11,11 @@ Current Features:
   - OPTIONAL: Remove unsupported grbl G and M commands
 
 To Do: 
+  - Update to Grbl 0.8c
+  - Add option to include user generated post gcode commands
+  - Check for metric vs imperial units - add G20 if using UGS
+
+Stretch To Do:
   - Add canned cycle translation
   - Number precision identification and truncation
   - Arc conversion option
